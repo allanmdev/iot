@@ -22,7 +22,7 @@ void loop() {
   display.clearDisplay();
   display.setCursor(0, 30);
   Serial.println(sensorValue);
-  if (sensorValue == LOW) {
+  if (sensorValue == HIGH) {
     display.print("Som");
     display.setCursor(0, 50);
     display.print("DETECTADO");
